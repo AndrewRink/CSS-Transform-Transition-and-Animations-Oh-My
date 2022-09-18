@@ -26,18 +26,20 @@ nav {
 .hamburger:hover ~ nav {
   opacity: 1;
 }
-
+/*rotates top bar*/
 @keyframes top {
-  from {}
-  to {}
+  from {display:initial}
+  to {transform-origin: top left;
+    transform: translatex(20px) rotate(45deg) translatey(10px);}
 }
-
+/*makes middle bar disappear*/
 @keyframes middle {
-  from {}
-  to {}
+  from {opacity:1}
+  to {opacity:0}
 }
-
+/*rotates bottom bar*/
 @keyframes bottom {
-  from {}
-  to {}
+  from {display:initial}
+  to {transform-origin: bottom left;
+    transform: translatex(20px) rotate(-45deg) translatey(-10px);}
 }
